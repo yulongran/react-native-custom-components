@@ -7,7 +7,7 @@ Preview:
 
 ### SearchBar 
 
-![buttonPreview](assets/images/SearchBar.png)
+<img src="assets/images/SearchBar.png" width="250" />
 
 
 ```
