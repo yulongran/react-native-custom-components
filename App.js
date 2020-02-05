@@ -3,13 +3,16 @@ import {
   SafeAreaView,
   StyleSheet,
 } from 'react-native';
-import { Avatar } from './components';
+import { Avatar, SearchBar } from './components';
+
 class App extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.App}>
-         <Avatar image={require("./assets/images/tiny_logo.png")}/>
-         <Avatar image={require("./assets/images/tiny_logo.png")} width={200} height={200}/>
+          <SearchBar 
+            shadow 
+            round={10} 
+            onChangeText={()=>{}}></SearchBar>
       </SafeAreaView>
     )
   }

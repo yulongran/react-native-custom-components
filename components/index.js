@@ -1,3 +1,3 @@
 import Avatar from "./Avatar";
-
-export { Avatar };
+import SearchBar from "./SearchBar";
+export { Avatar , SearchBar};
