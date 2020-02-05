@@ -3,16 +3,13 @@ import {
   SafeAreaView,
   StyleSheet,
 } from 'react-native';
-import { Avatar, SearchBar } from './components';
+import {SearchBarExample} from './example';
 
 class App extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.App}>
-          <SearchBar 
-            shadow 
-            round={10} 
-            onChangeText={()=>{}}></SearchBar>
+          <SearchBarExample/>
       </SafeAreaView>
     )
   }
