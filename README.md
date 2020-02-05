@@ -1,4 +1,4 @@
-# React-native-custom-components
+# React-Native-custom-components
 
 React-native-custom-components compatible for both ios and android
 
@@ -7,11 +7,11 @@ React-native-custom-components compatible for both ios and android
 
 ## SearchBar 
 
-##### Preview:
+#### Preview:
 
-<img src="assets/images/SearchBar.png" width="250" />
+<img src="assets/images/SearchBar.png" width="300" />
 
-##### Usage:
+#### Usage:
 
 ```
 <SearchBar
@@ -21,7 +21,7 @@ React-native-custom-components compatible for both ios and android
     onChangeText={() => { }} />
 ```
 
-##### Property
+#### Property
 
 | Property             |    Type    |       Default        | Description                                        |
 | -------------------- | :--------: | :------------------: | -------------------------------------------------- |
