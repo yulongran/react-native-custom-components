@@ -3,13 +3,13 @@ import {
   SafeAreaView,
   StyleSheet,
 } from 'react-native';
-import {AvatarExample} from './example';
+import {ButtonExample} from './example';
 
 class App extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.App}>
-          <AvatarExample/>
+          <ButtonExample/>
       </SafeAreaView>
     )
   }

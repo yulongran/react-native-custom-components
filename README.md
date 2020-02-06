@@ -4,6 +4,7 @@ React-native-custom-components compatible for both ios and android
 
 # List of components
 - [SearchBar](#searchBar)
+- [Avatar](#avatar)
 
 ## SearchBar 
 
@@ -35,5 +36,27 @@ React-native-custom-components compatible for both ios and android
 | leftComponent  |   object   |  null     | use to add custom component on the left of the search bar
 | rightComponent  |   object   |  vector search icon     | use to add custom component on the right of the search bar
 
+## Avatar
+
+#### Preview:
+
+<img src="assets/images/Avatar.png" width="300" />
+
+#### Usage:
+
+```
+<Avatar 
+    image={require("../assets/images/child-1837375_960_720.png")} 
+    width={200} 
+    height={200}/>
+```
+
+#### Property
+
+| Property             |    Type    |       Default        | Description                                        |
+| -------------------- | :--------: | :------------------: | -------------------------------------------------- |
+| width  |   number   |  100     | use to set width of the avatar
+| height |   number   |  100     | use to set height of the avatar
+| image  |   string   |  required     | image in avatar
 
     
