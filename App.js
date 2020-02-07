@@ -3,13 +3,13 @@ import {
   SafeAreaView,
   StyleSheet,
 } from 'react-native';
-import {ButtonExample} from './example';
+import {TextExample} from './example';
 
 class App extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.App}>
-          <ButtonExample/>
+          <TextExample/>
       </SafeAreaView>
     )
   }
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent:'center',
     alignItems:'center',
+    backgroundColor:'#EAEAEA',
   }
 })
 

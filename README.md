@@ -79,5 +79,30 @@ React-native-custom-components compatible for both ios and android
 
 Coming Soon
 
+
+## Text
+
+#### Preview:
+
+<img src="assets/images/Text.png" width="300" />
+
+#### Usage:
+
+```
+<Text h1 transform="uppercase">h1 text</Text>
+<Text h2 transform="uppercase">h2 text</Text>
+<Text h3 transform="uppercase">h3 text</Text>
+<Text spacing={10} h1>Letter Spacing</Text>
+<Text bold h2>Bold Text</Text>
+<Text light h2>light Text</Text>
+<Text color="blue" h2>Color Text</Text>
+<Text h2 family="AvenirNext-BoldItalic">Family Text</Text>
+```
+
+#### Property
+
+Coming Soon
+
+
     
     
