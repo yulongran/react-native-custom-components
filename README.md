@@ -6,6 +6,7 @@ React-native-custom-components compatible for both ios and android
 - [SearchBar](#searchBar)
 - [Avatar](#avatar)
 - [Button](#button)
+- [Text](#text)
 
 ## SearchBar 
 
