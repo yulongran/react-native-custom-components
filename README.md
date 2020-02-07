@@ -5,6 +5,7 @@ React-native-custom-components compatible for both ios and android
 # List of components
 - [SearchBar](#searchBar)
 - [Avatar](#avatar)
+- [Button](#button)
 
 ## SearchBar 
 
@@ -59,4 +60,24 @@ React-native-custom-components compatible for both ios and android
 | height |   number   |  100     | use to set height of the avatar
 | image  |   string   |  required     | image in avatar
 
+
+## Button
+
+#### Preview:
+
+<img src="assets/images/Button.png" width="300" />
+
+#### Usage:
+
+```
+<Button round={30} shadow gradient={["#11998e", "#38ef7d"]} color={"#38ef7d"}>
+    <Text style={{ color: "white", fontWeight: '900' }}>Hello World</Text>
+</Button>
+```
+
+#### Property
+
+Coming Soon
+
+    
     

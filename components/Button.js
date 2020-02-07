@@ -9,7 +9,9 @@ export default class Button extends Component {
       style,
       opacity,
       gradient,
+      outlined,
       color,
+      round,
       shadow,
       children,
       disabled,
@@ -18,8 +20,10 @@ export default class Button extends Component {
 
     const buttonStyles = [
       styles.button,
-      shadow && styles.shadow,
-      color && !styles[color] && { backgroundColor: color },
+      round && {borderRadius: round},
+      // If color is apply, default shadowColor is blue
+      shadow && {...styles.shadow, shadowColor: color || "blue"},
+      color && { backgroundColor: color },
       style
     ];
 
@@ -28,7 +32,7 @@ export default class Button extends Component {
         <TouchableOpacity
           style={buttonStyles}
           disabled={disabled || false}
-          activeOpacity={opacity}
+          activeOpacity={opacity || 0.6}
           {...props}
         >
           <LinearGradient
@@ -40,6 +44,19 @@ export default class Button extends Component {
           >
             {children}
           </LinearGradient>
+        </TouchableOpacity>
+      );
+    }
+    else if (outlined) {
+      return (
+        <TouchableOpacity
+          // If color is not supplied, default outlined has white border
+          style={[buttonStyles, styles.outlined, { borderColor: color || "blue" }]}
+          disabled={disabled || false}
+          activeOpacity={opacity || 0.8}
+          {...props}
+        >
+          {children}
         </TouchableOpacity>
       );
     }
@@ -61,7 +78,6 @@ export default class Button extends Component {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: 'blue',
-    borderRadius: 10,
     height: 50,
     width: 200,
     justifyContent: "center",
@@ -69,11 +85,19 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   shadow: {
-    shadowColor: "gray",
+    shadowColor: "blue",
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.9,
     shadowRadius: 10
   },
+  outlined: {
+    backgroundColor: 'white',
+    borderColor: 'black',
+    borderWidth: 0.7,
+  },
+  round:{
+    borderRadius: 10,
+  }
 });
 
 
@@ -83,6 +107,6 @@ Button.propTypes = {
   gradient: PropTypes.array,
   color: PropTypes.string,
   shadow: PropTypes.bool,
-  children: PropTypes.array,
+  children: PropTypes.object || PropTypes.array,
   disabled: PropTypes.bool,
 };
